@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -66,6 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:onClick="redClick"
                 android:text="Red"
                 android:textSize="20sp" />
 
@@ -74,6 +76,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:onClick="blueClick"
                 android:text="Blue"
                 android:textSize="20sp" />
 
@@ -82,6 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:onClick="greenClick"
                 android:text="Green"
                 android:textSize="20sp" />
 
@@ -90,6 +94,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:onClick="cyanClick"
                 android:text="Cyan"
                 android:textSize="20sp" />
         </RadioGroup>
@@ -118,10 +123,11 @@
             android:layout_weight="1" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
+            android:onClick="btnClick"
             android:text="Change" />
 
         <Space
